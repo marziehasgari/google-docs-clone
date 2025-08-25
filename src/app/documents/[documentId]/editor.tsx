@@ -49,7 +49,7 @@ const Editor = ({ initialContent }: Props) => {
 
   const editor = useEditor({
     immediatelyRender: false,
-
+    autofocus: true,
     onCreate({ editor }) {
       setEditor(editor);
     },
